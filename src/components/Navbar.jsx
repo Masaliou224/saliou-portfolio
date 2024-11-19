@@ -9,7 +9,7 @@ const Navbar = () => {
         <li><a href="#hero" className="hover:text-teal-500">Home</a></li>
           <li><a href="#about" className="hover:text-teal-500">About</a></li>
           <li><a href="#projects" className="hover:text-teal-500">Projects</a></li>
-          <li><a href="#contact" className="hover:text-teal-500">Contact</a></li>
+          <li><a href="#" className="hover:text-teal-500">Contact</a></li>
         </ul>
         <ThemeToggle />
       </div>

@@ -17,7 +17,7 @@ const Footer = () => {
           <span className="mr-2 text-gray-600 dark:text-white">Social</span>
           <div className="flex gap-4">
           <a 
-            href="/"
+            href="https://www.linkedin.com/in/masaliou224/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-600 transition-colors"
@@ -25,7 +25,7 @@ const Footer = () => {
             <Linkedin size={20}/>
           </a>
           <a 
-            href="/"
+            href="https://github.com/Masaliou224"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-900 transition-colors"

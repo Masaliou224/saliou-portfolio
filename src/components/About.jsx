@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const About = () => {
-  const skills = ["HTML", "CSS", "JavaScript", "PHP", "React.js", "Laravel", "WordPress"]
+  const skills = ["HTML", "CSS", "JavaScript", "PHP", "React.js", "Next.js", "Node.js", "Laravel", "WordPress"]
   return (
     <section id="about" className="py-12 bg-white dark:bg-gray-700 dark:text-white">
       <div className="max-w-7xl mx-auto px-6">
@@ -15,7 +15,7 @@ const About = () => {
         >
           <h2 className="text-3xl font-bold text-gray-800 dark:text-white">About Me</h2>
           <p className="mt-4 text-gray-600 dark:text-white max-w-3xl mx-auto">
-            I’m a Frontend-focused Web Developer passionate about creating interactive
+            I’m a Fullstack Web Developer passionate about creating interactive
             and responsive applications. I love sharing my knowledge with the dev
             community.
           </p>
@@ -35,8 +35,8 @@ const About = () => {
               Get to know me!
             </h3>
             <p className="text-gray-600 dark:text-white leading-relaxed">
-              I'm a Frontend Focused Web Developer building and managing the
-              Front-end of Websites and Web Applications that lead to the
+              I'm a Fullstack Focused Web Developer building and managing the
+              Front-end and Back-end of Websites and Web Applications that lead to the
               success of the overall product. Check out some of my work in the
               Projects section.
             </p>
@@ -46,17 +46,21 @@ const About = () => {
               people of the Dev Community. Feel free to Connect or Follow me on
               my{" "}
               <a
-                href="#"
+                href="https://www.linkedin.com/in/masaliou224/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-teal-500 underline hover:text-teal-600"
               >
                 Linkedin
               </a>{" "}
               and{" "}
               <a
-                href="#"
+                href="https://github.com/Masaliou224"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-teal-500 underline hover:text-teal-600"
               >
-                Instagram
+                Github
               </a>{" "}
               where I post useful content related to Web Development and
               Programming.

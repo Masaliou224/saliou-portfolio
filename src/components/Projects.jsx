@@ -10,6 +10,14 @@ const Projects = () => {
       title: "MarketPlace",
       description: "An online marketplace for sellers and buyers.",
     },
+    {
+      title: "N'mafôkhai",
+      description: "N'mafôkhai is a website for connecting homeowners and tenants.",
+    },
+    {
+      title: "Audio Player",
+      description: "Audio-Player app developed in React.JS and Next.JS.",
+    },
   ];
 
   return (

@@ -3,16 +3,34 @@ import React from "react";
 // ⚠️ À personnaliser : dates, intitulés et liens réels.
 const experiences = [
   {
-    year: "2024 — Présent",
-    title: "Software Engineer",
-    role: "Entreprise · Conakry",
-    text: "Conception et maintenance d'applications web internes, automatisation de processus métier et support technique aux équipes.",
+    year: "2026 — Présent",
+    title: "Junior Developer & System Engineer",
+    role: "Entreprise · SIGA",
+    text: "Conception et maintenance de la plateforme olosuite.com",
   },
   {
-    year: "2024",
+    year: "2026",
+    title: "Mission freelance",
+    role: "Entreprise · Peautau Béton Sénégal",
+    text: "Conception et maintenance d'une plateforme interne de gestion de la production",
+  },
+  {
+    year: "2025 — 2026",
+    title: "Software Engineer",
+    role: "Entreprise · ITCS Group",
+    text: "Conception et maintenance d'applications web internes, automatisation de processus métier et support technique aux équipes",
+  },
+  {
+    year: "2025",
     title: "Formateur en développement web",
-    role: "Simplon Guinée",
-    text: "Formation de nouveaux apprenants aux fondamentaux du développement web et mobile (HTML, CSS, JavaScript, React).",
+    role: "Entreprise · Simplon Guinée",
+    text: "Formation de nouveaux apprenants aux fondamentaux du développement web et mobile (HTML, CSS, JavaScript, React)",
+  },
+  {
+    year: "2025",
+    title: "Formateur en développement web",
+    role: "Organisme · ANSUTEN",
+    text: "Formation des apprenants aux fondamentaux du développement backend",
   },
 ];
 

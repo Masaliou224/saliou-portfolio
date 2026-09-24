@@ -33,9 +33,8 @@ const Sidebar = () => {
       </div>
 
       <p className="text-sm text-mist-dim">
-        Développeur Fullstack passionné par la création d'applications
-        interactives et responsives. J'aime aussi partager ce que j'apprends
-        avec la communauté dev.
+        Développeur Fullstack & Intégrateur IA 
+        J'emprunte le meilleur du Web et de l'Intelligence Artificielle pour concevoir des applications performantes, robustes et orientées utilisateur. Fort d'expériences en entreprise et en freelance, je suis toujours ouvert aux nouveaux défis et au partage de connaissances.
       </p>
 
       <div>

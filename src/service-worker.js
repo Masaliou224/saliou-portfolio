@@ -1,4 +1,9 @@
 /* eslint-disable no-restricted-globals */
+import { precacheAndRoute } from 'workbox-precaching';
+
+// Workbox utilisera cette ligne pour injecter le manifest
+precacheAndRoute(self.__WB_MANIFEST);
+
 const CACHE_NAME = "saliou-portfolio-v1";
 const OFFLINE_URLS = ["/", "/index.html", "/manifest.json"];
 

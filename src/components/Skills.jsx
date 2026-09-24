@@ -1,13 +1,17 @@
 import React from "react";
 
 const techSkills = [
-  "HTML", "CSS", "JavaScript", "PHP", "React.js",
-  "Next.js", "Node.js", "Laravel", "WordPress",
+  "JavaScript", "Typescript", "PHP", "React.js", "Vite.js", "Angular",
+  "Next.js", "Node.js", "Laravel", "Tailwindcss", "Github", "Supabase", "Docker","WordPress", "Vercel"
 ];
 
 const softSkills = [
   "Travail d'équipe", "Communication", "Autonomie",
   "Résolution de problèmes", "Rigueur", "Adaptabilité",
+];
+
+const toolSkills = [
+  "VSCode", "Visual Studio", "Notion", "n8n", "Claude Code", "Postman", "Jira", "Microsoft 360", "Figma", "Canva", "Github Desktop",
 ];
 
 const Skills = () => {
@@ -50,6 +54,22 @@ const Skills = () => {
               <span
                 key={skill}
                 className="font-mono text-xs px-3 py-1.5 rounded-full border border-accent3/30 text-accent3 bg-surface2"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="bg-surface border border-line rounded-card p-5">
+          <h4 className="font-mono text-[11px] uppercase tracking-wide text-mist-faint mb-3.5">
+            Stack d'outils
+          </h4>
+          <div className="flex flex-wrap gap-2">
+            {toolSkills.map((skill) => (
+              <span
+                key={skill}
+                className="font-mono text-xs px-3 py-1.5 rounded-full border border-accent2/30 text-accent2 bg-surface2"
               >
                 {skill}
               </span>

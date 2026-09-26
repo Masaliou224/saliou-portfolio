@@ -1,27 +1,23 @@
-const { useState, useEffect } = require("react")
+import React, { useEffect, useState } from "react";
+import { Sun, Moon } from "lucide-react";
 
 const ThemeToggle = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-    if (!isDarkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  };
+  const [isLight, setIsLight] = useState(
+    () => typeof window !== "undefined" && localStorage.getItem("theme") === "light"
+  );
 
   useEffect(() => {
-    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-  }, [isDarkMode]);
+    document.documentElement.classList.toggle("light", isLight);
+    localStorage.setItem("theme", isLight ? "light" : "dark");
+  }, [isLight]);
 
   return (
     <button
-      onClick={toggleTheme}
-      className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 items-center"
+      onClick={() => setIsLight((v) => !v)}
+      aria-label={isLight ? "Passer en thème sombre" : "Passer en thème clair"}
+      className="w-9 h-9 rounded-full flex items-center justify-center bg-surface2 border border-line text-mist-dim hover:text-accent hover:border-accent transition-colors flex-shrink-0"
     >
-      {isDarkMode ? '🌙' : '☀️'}
+      {isLight ? <Moon size={16} /> : <Sun size={16} />}
     </button>
   );
 };

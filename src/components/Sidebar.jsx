@@ -1,8 +1,9 @@
 import React from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const certifications = [
-  { label: "Free Code Camp — Responsive Web Design", href: "#" },
-  { label: "Free Code Camp — JS Algorithms", href: "#" },
+  { label: "Free Code Camp — Responsive Web Design", href: "https://freecodecamp.org/certification/massaliou/responsive-web-design" },
+  { label: "Free Code Camp — JS Algorithms", href: "https://freecodecamp.org/certification/massaliou/javascript-algorithms-and-data-structures-v8" },
   { label: "Simplon Guinée — Dév. Web", href: "#" },
 ];
 
@@ -20,9 +21,12 @@ const Sidebar = () => {
         <div className="w-16 h-16 rounded-full flex-shrink-0 flex items-center justify-center font-display font-bold text-ink text-xl bg-gradient-to-br from-accent to-emerald-800">
           MS
         </div>
-        <div>
-          <div className="font-mono text-xs text-accent tracking-wide">
-            &lt;Hi, je suis /&gt;
+        <div className="flex-1 min-w-0">
+          <div className="flex items-start justify-between gap-2">
+            <div className="font-mono text-xs text-accent tracking-wide">
+              &lt;Hi, je suis /&gt;
+            </div>
+            <ThemeToggle />
           </div>
           <h1 className="font-display text-xl font-semibold leading-tight mt-0.5">
             Saliou

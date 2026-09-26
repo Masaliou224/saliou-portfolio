@@ -1,4 +1,5 @@
 import React from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const MobileHeader = () => {
   return (
@@ -14,13 +15,16 @@ const MobileHeader = () => {
           </div>
         </div>
       </div>
-      <a
-        href="/cv-saliou.pdf"
-        download
-        className="font-mono text-[11px] bg-accent text-ink font-semibold rounded-full px-3.5 py-1.5 flex-shrink-0"
-      >
-        CV ↓
-      </a>
+      <div className="flex items-center gap-2.5 flex-shrink-0">
+        <ThemeToggle />
+        <a
+          href="/cv-saliou.pdf"
+          download
+          className="font-mono text-[11px] bg-accent text-ink font-semibold rounded-full px-3.5 py-1.5"
+        >
+          CV ↓
+        </a>
+      </div>
     </header>
   );
 };

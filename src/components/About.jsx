@@ -12,7 +12,7 @@ const capabilities = [
 
 const About = () => {
   return (
-    <section id="about" className="py-16 px-6 md:px-12 lg:px-[72px] border-b border-line-soft scroll-mt-[52px]">
+    <section className="py-16 px-6 md:px-12 lg:px-[72px]">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ const About = () => {
             transition={{ duration: 0.4, delay: i * 0.05 }}
             className="bg-surface border border-line rounded-card p-5 hover:border-accent hover:-translate-y-0.5 transition-all"
           >
-            <div className="w-8.5 h-[34px] rounded-lg bg-accent-soft text-accent flex items-center justify-center mb-3.5">
+            <div className="w-8.5 h-[34px] rounded-lg bg-accent/10 text-accent flex items-center justify-center mb-3.5">
               {cap.icon}
             </div>
             <h3 className="font-display text-[15px] font-semibold mb-1.5">

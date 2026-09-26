@@ -4,12 +4,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Thème sombre (par défaut) — identité "éditeur de code" */
+:root {
+  --color-ink: 12 18 16;           /* #0c1210 */
+  --color-surface: 18 25 23;       /* #121917 */
+  --color-surface2: 25 34 31;      /* #19221f */
+  --color-line: 37 52 48;          /* #253430 */
+  --color-line-soft: 28 38 34;     /* #1c2622 */
+  --color-mist: 236 238 235;       /* #eceeeb */
+  --color-mist-dim: 147 161 154;   /* #93a19a */
+  --color-mist-faint: 95 109 103;  /* #5f6d67 */
+  --color-accent: 41 211 152;      /* #29d398 */
+  --color-accent2: 242 180 77;     /* #f2b44d */
+  --color-accent3: 110 155 255;    /* #6e9bff */
+}
+
+/* Thème clair — appliqué via la classe .light sur <html> (ThemeToggle) */
+.light {
+  --color-ink: 247 248 246;        /* #f7f8f6 */
+  --color-surface: 255 255 255;    /* #ffffff */
+  --color-surface2: 240 242 239;   /* #f0f2ef */
+  --color-line: 221 227 223;       /* #dde3df */
+  --color-line-soft: 230 234 231;  /* #e6eae7 */
+  --color-mist: 16 35 28;          /* #10231c */
+  --color-mist-dim: 75 91 84;      /* #4b5b54 */
+  --color-mist-faint: 124 138 132; /* #7c8a84 */
+  --color-accent: 15 159 110;      /* #0f9f6e */
+  --color-accent2: 201 138 31;     /* #c98a1f */
+  --color-accent3: 59 102 209;     /* #3b66d1 */
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-ink text-mist font-body;
+  @apply bg-ink text-mist font-body transition-colors duration-200;
 }
 
 ::selection {

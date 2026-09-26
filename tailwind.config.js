@@ -4,18 +4,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ink: "#0c1210",       // fond principal
-        surface: "#121917",   // panneaux / cartes
-        surface2: "#19221f",  // panneaux imbriqués
-        line: "#253430",      // bordures
-        "line-soft": "#1c2622",
-        mist: "#eceeeb",      // texte principal
-        "mist-dim": "#93a19a",
-        "mist-faint": "#5f6d67",
-        accent: "#29d398",    // vert-teal (couleur de marque de Saliou)
-        "accent-soft": "rgba(41,211,152,.12)",
-        accent2: "#f2b44d",   // ambre (hard skills)
-        accent3: "#6e9bff",   // bleu (soft skills)
+        // rgb(var(--color-x) / <alpha-value>) permet les modifiers d'opacité
+        // (bg-accent/10, border-line/50, etc.) tout en restant pilotable par thème.
+        ink: "rgb(var(--color-ink) / <alpha-value>)",
+        surface: "rgb(var(--color-surface) / <alpha-value>)",
+        surface2: "rgb(var(--color-surface2) / <alpha-value>)",
+        line: "rgb(var(--color-line) / <alpha-value>)",
+        "line-soft": "rgb(var(--color-line-soft) / <alpha-value>)",
+        mist: "rgb(var(--color-mist) / <alpha-value>)",
+        "mist-dim": "rgb(var(--color-mist-dim) / <alpha-value>)",
+        "mist-faint": "rgb(var(--color-mist-faint) / <alpha-value>)",
+        accent: "rgb(var(--color-accent) / <alpha-value>)",
+        accent2: "rgb(var(--color-accent2) / <alpha-value>)",
+        accent3: "rgb(var(--color-accent3) / <alpha-value>)",
       },
       fontFamily: {
         display: ["Space Grotesk", "sans-serif"],
